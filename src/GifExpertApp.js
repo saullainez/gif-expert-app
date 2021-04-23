@@ -6,7 +6,7 @@ const GifExpertApp = (  ) => {
     const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
 
     const handleAdd = () => {
-        setCategories( [...categories, 'Agregar'] );
+        setCategories( cats => [...categories, 'Agregar'] );
     }
 
     return (
