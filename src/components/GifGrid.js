@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs'
 import GifGridItem from './GifGridItem';
+import { Loading } from './Loading';
 
 export const GifGrid = ( { category } ) => {
 
@@ -11,7 +12,7 @@ export const GifGrid = ( { category } ) => {
         <>
             <h3>{ category }</h3>  
 
-            { loading && <p>Loading</p> }
+            <Loading loading={loading} />
 
             <div className="card-grid">
                 {
