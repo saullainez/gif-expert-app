@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const Loading = ({ loading }) => {
     return (
         <>
-            { loading && <p>Loading</p> }
+            { loading && <p className="animate__animated animate__flash">Loading...</p> }
         </>
     )
 }
